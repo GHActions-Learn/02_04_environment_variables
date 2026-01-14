@@ -38,7 +38,7 @@ jobs:
         env:
           GLOBAL_MESSAGE: "Step Override: ${{ env.MODE }} mode"
           STEP_MESSAGE: "From step in ${{ env.PLATFORM }}"
-          TEST_STEP_YAML_VAR: "Test step local environment variable"
+          TEST_STEP_YAML_VAR: "Test step local environment variable" #The variable added to test yaml vars within step 
         run: |
           echo "🌍 GLOBAL_MESSAGE (YAML interpolated)      : ${{ env.GLOBAL_MESSAGE }}"
           echo "🔧 STEP_MESSAGE (YAML interpolated)        : ${{ env.STEP_MESSAGE }}"
